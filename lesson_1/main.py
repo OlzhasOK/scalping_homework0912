@@ -19,3 +19,6 @@ for i in range(len(quotes)):
 
 with open('./quotes.json', 'w', encoding='utf-8') as fp:
     json.dump(data, fp, ensure_ascii=False, indent=4)
+
+for quote in quotes:
+    print(quote.text)
